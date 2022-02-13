@@ -1,0 +1,353 @@
+
+
+body{
+    overflow-x: hidden;
+    background-color: #0A100C;
+}
+
+
+#movie_desc{
+    color:aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+input{
+    color: aliceblue;
+}
+textarea:focus, input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+/* // Body */
+
+h1{
+    color: aliceblue;
+}
+/* // Header************************************* */
+
+.header-title{
+    font-family: 'Slabo 27px', serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.header-captions{
+    font-family: 'Roboto', sans-serif;
+    color: #5C5C5C;
+    font-size: 18;
+    font-weight: 800;
+}
+
+.container-login-icon{
+    background-color: #313131;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+/* // Searchbar *************** */
+
+.search-bar{
+    height: 50px;
+    border-radius: 30px;
+}
+
+.container-search-bar-results{
+    background-color: aliceblue;
+    border-radius: 30px;
+    width: 500px;
+    height: 50px;
+    @media (max-width : 650px) {
+        width: 450px;
+    }
+    @media (max-width : 475px) {
+        width: 250px;
+        padding: 0px 10px;
+    }
+}
+.container-search-bar-index{
+    background-color: aliceblue;
+    border-radius: 30px;
+    width: 800px;
+    height: 50px;
+    @media (max-width : 900px) {
+        width: 600px;
+    }
+    @media (max-width : 650px) {
+        width: 450px;
+    }
+    @media (max-width : 475px) {
+        width: 250px;
+        padding: 0px 10px;
+    }
+    
+}
+.search-bar-input{
+    background-color: aliceblue;
+    border-radius: 30px;
+    border: none;
+    height: 50px;
+}
+
+
+/* // Poster */
+.container-poster{
+    position: absolute;
+    bottom: 0px;
+    height: 500px;
+    background-size: cover;
+    background-image: url("./assets/poster_college_cropped.png");
+    @media (max-height : 1532px) {
+        height: 300px;
+        
+    }
+    @media (max-width: 576px) {
+        height: 600px;
+        background-size: fill;
+        
+    }
+}
+
+/* // Forms */
+.container-form-details{
+    width: 350px ;
+    color: aliceblue;
+    @media (max-width:450px) {
+        width: 300px;
+    }
+}
+
+.input-field-details{
+    color: aliceblue;
+    margin: 5px 0px;
+    background-color: #1A201C;
+    border-width: 0px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px 0px;
+
+}
+
+/* // Main Section ****************** */
+.main-section-container{
+    display: flex;
+    position: absolute; 
+    left: 0%; 
+    right: 0%; 
+    top: 0%;
+    bottom: 0%;
+}
+
+.main-section-container-non-abs{
+    display: flex;
+    
+    left: 0%; 
+    right: 0%; 
+    top: 0%;
+    bottom: 0%;   
+}
+
+#Login_body{
+    background: url("../static/assets/login_bg_shot.png"), #0A100C;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    @media (max-width:1220px) {
+        background: #0A100C;
+    }
+}
+
+.title-login{
+    color: aliceblue;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.btn-submit{
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    margin: 20px 0px 5px 0px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 20px;
+    border-width: 0px;
+    display: block;
+    color: aliceblue;
+    font-family: 'Satisfy', "cursive";
+}
+
+.btn-submit:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: aliceblue;
+    text-decoration: none;
+
+  }
+
+.features{
+    color: #B7B5B9;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* // tile movie card */
+.tile-card{
+    border-radius: 15px;
+    overflow: hidden; 
+    width: 220px; 
+    background-color: #EAEAEA !important;
+    margin: 10px;
+    @media (max-width : 950px) {
+        width: 150px;
+        height: 220px;
+    }
+}
+.tile-card-container{
+    border-radius: 15px;
+    overflow: hidden; 
+    width: 220px; 
+    background-color: #EAEAEA;
+    margin: 10px;
+    @media (max-width : 950px) {
+        width: 150px;
+        height: 220px;
+    }
+}
+/* // .tile-card  :hover{
+//     display: none;
+// } */
+.tile-title{
+    font-size: 20px;
+    color: black;
+}
+.tile-desc{
+    font-size: 10px;
+    color: black;
+}
+.container-poster-img{
+    width: 230px; 
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+    @media (max-width : 950px) {
+        width: 150px;
+        height: 220px;
+    }
+}
+.p-tile-desc{
+    line-height: 0.9;
+}
+.poster-img{
+    width: 250px; 
+    height: 300px; 
+    margin: -30px 0px -10px 0px; 
+    @media (max-width : 950px) {
+        width: 150px;
+        height: 200px;
+        margin: -40px 0px -10px 0px; 
+    }
+}
+
+
+
+.txt-registration-success-head{
+    color: aliceblue;
+    font-size: 15px;
+}
+.txt-registration-success-main{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+
+@keyframes effect {
+    0%{background-image: linear-gradient(to right, #8E54E9  51%, #4776E6  100%);}
+    25%{background-image: linear-gradient(to top, #8E54E9  51%, #4776E6  100%);}
+    50%{background-image: linear-gradient(to left, #8E54E9  51%, #4776E6  100%);}
+    25%{background-image: linear-gradient(to bottom, #8E54E9  51%, #4776E6  100%);}
+    100%{background-image:linear-gradient(to right,#8E54E9  51%, #4776E6  100%);}
+}
+.txt-registration-success-name{
+    font-size: 40px;
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    font-family: 'Nothing You Could Do', cursive;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    animation: effect 3s linear infinite;
+    font-weight: 550;
+}
+
+/* // movie_details */
+.review-card{
+    background: #1A201C;
+}
+
+.btn-post{
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    margin: 20px 0px 5px 0px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 20px;
+    border-width: 0px;
+    display: block;
+    color: aliceblue;
+    font-family: 'Satisfy', "cursive";
+}
+
+/* 
+// Profile details */
+
+
+.profile-title {
+    font-family: "Slabo 27px", serif;
+    letter-spacing: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.profile-captions {
+    font-family: "Roboto", sans-serif;
+    color: #5c5c5c;
+    font-size: 18;
+    font-weight: 800;
+}
+
+.btn-signout {
+    background-image: linear-gradient(to right, #16bffd 0%, #cb3066 51%, #16bffd 100%);
+    margin: 20px 0px 5px 0px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 20px;
+    border-width: 0px;
+    display: block;
+    color: aliceblue;
+    font-family: "Satisfy", "cursive";
+}
+
+.btn-signout:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.img-profile{
+    width: 350px;
+    @media (max-width:575px) {
+        width: 250px;
+    }
+}

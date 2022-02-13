@@ -1,0 +1,18 @@
+{% load static%}
+{%load index%}
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'custom.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link href="">
+</head>
+<body>
+    {% for i in len %}
+    <h1 style="color: #FFFFFF">{{res.0}}</h1>
+    {% endfor %}
+</body>
+</html>

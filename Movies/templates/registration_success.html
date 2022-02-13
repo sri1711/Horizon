@@ -1,0 +1,51 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'custom.css'%}" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
+</head>
+
+<body id="Login_body">
+    <div class="container-main mt-5">
+        <div class="container container-title d-flex justify-content-center col-sm-11 col-10">
+            <div class="d-flex flex-column align-items-center">
+                <span class="display-6 header-title">Horizon</span>
+                <span class="header-captions my-0 py-0">Your movie destination</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-section-container-non-abs">
+        <div class="container-form container d-flex justify-content-center mt-5" >
+            <div class="form d-flex flex-column align-items-center" style="line-height: 1.2;">
+                <p class="txt-registration-success-head" style="font-size: 20px; font-family: 'Nothing You Could Do', cursive;">Hey there</p>
+                <p class="txt-registration-success-name" id="user-name">
+                    <span class="txt-registration-success-name-value">Sara Adithi</span>
+                </p>
+                <p class="txt-registration-success-head">Welcome to the community</p>
+                <p class="txt-registration-success-main" >You're in!</p>
+                <button class="btn-submit w-100" id="sign-in-rs" data-url="{% url 'login' %}"> Sign in</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="{% static 'registration_success.js' %}"></script>
+</body>
+
+</html>
